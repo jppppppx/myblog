@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Blog - 关于自建gpt的一些介绍</title>
+    <link rel="stylesheet" href="https://unpkg.com/github-markdown-css">
+    <style>
+        body {
+            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-top: 0;
+            color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 10px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+        }
+
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .post-list li {
+            margin-bottom: 10px;
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-list a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .category-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .category-list li {
+            margin-bottom: 10px;
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-list a {
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>关于自建gpt的一些介绍以及一些问题</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./index.html">文章</a></li>
+                <li><a href="#">关于我</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="markdown-body">
+        <article>
+            <h2>关于自建gpt的一些介绍以及一些问题</h2>
+            <p>在本章中，对于我搭建的gpt网站进行一个介绍</p>
+            <h3>首先，奉上体验网站，有时候可能因为人多响应失败，请稍等再试！--<a href="http://gpt.xhxlb.online">体验网站</a></h3>
+            <p>在这一步中，您需要收集足够的文本数据，以便训练您的 GPT 模型。您可以使用公共数据集，也可以自己创建数据集。</p>
+            <h3>自建的GPT是官网的吗？</h3>
+            <p>答案是肯定的，自建gpt使用的是官网提供的api key，在官网对话主要用的是官网提供的页面，而自建gpt则是用到搭建在我自己服务器上的页面，但是他们的对话终点都是chatGPT官方的api。因此
+                唯一的不同点就是长得不一样。
+            </p>
+            <h3>为什么国内可以访问？</h3>
+            <p>因为是搭建在服务器上的项目，所以我们访问的页面属于国内的服务器页面，服务器再通过代理使用外国的ip地址访问gpt官网，就可以沟通并把信息反馈给我们，
+                相当于自建的GPT就是一个中介，我们在自建的GPT上发消息，他替我们调用外国的官网api。
+            </p>
+            <h3>有什么好处？</h3>
+            <p>首先，自建的GPT相对于官网比较稳定，官网使用时或多或少会有断连的情况，因为特殊原因这是不可避免地，而使用自建服务器不需要刷新页面也可以
+                随问随答。其次，访问官网需要使用魔法，在国内比较麻烦，并且魔法也有好有坏，可以节省买魔法的钱。
+            </p>
+            <h3>有什么不好的地方</h3>
+            <p>那就是调用官方api不像使用账号直接再官网访问一样免费，调用是要收费的。如下图：</p>
+            <img src="./img/4.png">
+
+            </p>
+            <h3>需要可以联系我</h3>
+            <p>微信：xu2926428672</p>
+        </article>
+        </p>
+        <h3>下面奉上使用视频，供各位参考：</h3>
+        <p>
+            <video src="./img/gpt演示.mp4" style="width: 50%;" controls></video>
+        </p>
+    </main>
+
+    <footer>
+        <p>© 萝卜丁的干货分享</p>
+    </footer>
+</body>
+
+</html>
